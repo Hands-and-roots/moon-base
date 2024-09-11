@@ -15,5 +15,9 @@
     "**/lib/**/*",
     "**/mjs/**/*",
     "**/node_modules/**/*"
-  ]
+  ],
+  "compilerOptions": {
+    "emitDeclarationOnly": false,
+    "noEmit": true
+  },
 }

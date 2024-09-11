@@ -6,7 +6,7 @@ node:
   yarn:
     version: '1.22.22'
   addEnginesConstraint: true
-  dedupeOnLockfileChange: true
+  dedupeOnLockfileChange: false
   dependencyVersionFormat: 'workspace'
   syncProjectWorkspaceDependencies: true
   syncVersionManagerConfig: 'nvm'

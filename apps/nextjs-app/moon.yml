@@ -31,3 +31,8 @@ tasks:
   start:
     command: 'next start'
     local: true
+
+  lint:
+    args:
+      # Enable caching for this project
+      - '--cache'

@@ -4,3 +4,8 @@ tasks:
   build:
     outputs:
       - 'lib'
+
+  lint:
+    args:
+      # Enable caching for this project
+      - '--cache'
