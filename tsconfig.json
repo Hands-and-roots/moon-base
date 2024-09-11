@@ -3,7 +3,7 @@
   "files": [],
   "references": [
     {
-      "path": "apps/nextjs-app"
+      "path": "apps/auth-app"
     },
     {
       "path": "packages/node-package"
