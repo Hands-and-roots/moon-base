@@ -3,7 +3,7 @@ const config = require('prettier-config-moon');
 
 module.exports = {
 	...config,
-	plugins: ['prettier-plugin-svelte'],
+	plugins: [],
 	// pluginSearchDirs: ['.'],
-	overrides: [...config.overrides, { files: '*.svelte', options: { parser: 'svelte' } }],
+	overrides: [...config.overrides],
 };

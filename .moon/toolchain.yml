@@ -1,15 +1,16 @@
 $schema: 'https://moonrepo.dev/schemas/toolchain.json'
 
 node:
-  version: '20.13.1'
-  packageManager: 'pnpm'
-  pnpm:
-    version: '9.0.2'
+  version: '20.17.0'
+  packageManager: 'yarn'
+  yarn:
+    version: '1.22.22'
   addEnginesConstraint: true
   dedupeOnLockfileChange: true
   dependencyVersionFormat: 'workspace'
   syncProjectWorkspaceDependencies: true
   syncVersionManagerConfig: 'nvm'
+  inferTasksFromScripts: true
 
 typescript:
   projectConfigFileName: 'tsconfig.json'

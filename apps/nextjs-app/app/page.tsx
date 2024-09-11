@@ -1,10 +1,8 @@
 import Image from 'next/image';
-import { add } from '@company/browser-package';
 import styles from './page.module.css';
+import { add } from '@company/node-package';
 
 export default function Home() {
-	// Testing imports of local workspace packages
-	// eslint-disable-next-line no-console
 	console.log(add(1, 1));
 
 	return (

@@ -5,18 +5,8 @@ $schema: 'https://moonrepo.dev/schemas/workspace.json'
 versionConstraint: '>=1.16.0'
 
 projects:
-  angular-app: 'apps/angular-app'
-  astro-app: 'apps/astro-app'
-  browser-package: 'packages/browser-package'
-  cjs-package: 'packages/cjs-package'
-  mjs-package: 'packages/mjs-package'
-  nestjs-app: 'apps/nestjs-app'
   nextjs-app: 'apps/nextjs-app'
-  nuxt-app: 'apps/nuxt-app'
   node-package: 'packages/node-package'
-  remix-app: 'apps/remix-app'
-  sveltekit: 'apps/sveltekit'
-  vue-vite-app: 'apps/vue-vite-app'
 
 vcs:
   manager: 'git'
