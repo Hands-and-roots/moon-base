@@ -8,6 +8,12 @@ fileGroups:
     - 'next-env.d.ts'
     - 'next.config.*'
 
+  storybook:
+    - 'app/**/*'
+    - 'stories/**/*'
+    - 'tests/**/*'
+    - '.storybook/**/*'
+
 tasks:
   build:
     command: 'next build'
@@ -38,3 +44,16 @@ tasks:
     args:
       # Enable caching for this project
       - '--cache'
+
+  buildStorybook:
+    command: 'storybook build --output-dir @out(0)'
+    inputs:
+      - '@group(storybook)'
+    outputs:
+      - 'build'
+
+  storybook:
+    local: true
+    command: 'storybook dev -p 6006'
+    inputs:
+      - '@group(storybook)'
