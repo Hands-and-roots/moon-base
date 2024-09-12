@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.options.json",
+  "include": [
+    "**/*"
+  ],
+  "references": [
+    {
+      "path": "../store"
+    }
+  ],
+  "compilerOptions": {
+    "jsx": "react",
+    "outDir": "../../.moon/cache/types/packages/shared"
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { add } from '@hands-and-roots/utils/index';
+import Button from '@hands-and-roots/components/components/Button'
 
 export default function Home() {
 	console.log(add(1, 1));
@@ -51,6 +52,8 @@ export default function Home() {
 					>
 						Read our docs
 					</a>
+					
+					<Button>ddd</Button>
 				</div>
 			</main>
 			<footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">

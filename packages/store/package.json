@@ -1,0 +1,43 @@
+{
+    "name": "@hands-and-roots/store",
+    "version": "0.0.1",
+    "description": "Store for Hands and Roots.",
+    "scripts": {
+      "build": "tsc",
+      "watch": "tsc -w"
+    },
+    "author": "Mohammad Hefazi",
+    "license": "MIT",
+    "keywords": [
+      "node",
+      "lib"
+    ],
+    "packemon": {
+      "format": "lib",
+      "platform": "node"
+    },
+    "files": [
+      "lib/**/*",
+      "src/**/*"
+    ],
+    "types": "./index.d.ts",
+    "main": "./index.js",
+    "exports": {
+      "./package.json": "./package.json",
+      "./*": {
+        "types": "./lib/*.d.ts",
+        "default": "./lib/*.js"
+      },
+      ".": {
+        "types": "./lib/index.d.ts",
+        "default": "./lib/index.js"
+      }
+    },
+    "dependencies": {
+      "@reduxjs/toolkit": "^2.2.7"
+    },
+    "devDependencies": {
+      "@types/node": "^18.14.2",
+      "typescript": "^4.9.4"
+    }
+  }
