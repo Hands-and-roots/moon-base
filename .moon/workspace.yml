@@ -6,7 +6,7 @@ versionConstraint: '>=1.16.0'
 
 projects:
   auth-app: 'apps/auth-app'
-  node-package: 'packages/node-package'
+  utils: 'packages/utils'
 
 vcs:
   manager: 'git'

@@ -1,9 +1,14 @@
 {
   "name": "auth-app",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Authentication app for Hands and Roots project",
+  "author": "Mohammad Hefazi <smohe1991@gmail.com>",
+  "config": {
+    "port": "5001"
+  },
   "private": true,
   "dependencies": {
-    "@company/node-package": "0.0.1",
+    "@hands-and-roots/utils": "0.0.1",
     "@reduxjs/toolkit": "^2.2.7",
     "next": "14.2.9",
     "react": "^18",

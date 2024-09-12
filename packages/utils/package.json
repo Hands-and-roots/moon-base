@@ -1,5 +1,5 @@
 {
-  "name": "@company/node-package",
+  "name": "@hands-and-roots/utils",
   "private": true,
   "version": "0.0.1",
   "description": "A Node.js package.",
@@ -7,16 +7,15 @@
     "node",
     "lib"
   ],
-  "author": "moon",
+  "author": "Mohammad Hefazi <smohe1991@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/moonrepo/examples",
   "packemon": {
     "format": "lib",
     "platform": "node"
   },
   "engines": {
     "node": ">=18.12.0",
-    "npm": ">=6.14.0"
+    "yarn": ">=1.22.22"
   },
   "files": [
     "lib/**/*",
