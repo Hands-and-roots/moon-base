@@ -5,8 +5,7 @@ $schema: 'https://moonrepo.dev/schemas/workspace.json'
 versionConstraint: '>=1.16.0'
 
 projects:
-  nextjs-app: 'apps/nextjs-app'
-  node-package: 'packages/node-package'
+  utils: 'packages/utils'
 
 vcs:
   manager: 'git'

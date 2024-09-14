@@ -1,5 +1,5 @@
 {
-  "name": "@company/node-package",
+  "name": "@hands-and-roots/utils",
   "private": true,
   "version": "0.0.1",
   "description": "A Node.js package.",
