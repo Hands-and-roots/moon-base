@@ -1,7 +1,5 @@
 type: 'library'
-language: 'typescript'
-
-tasks:
-  build:
-    outputs:
-      - 'lib'
+#tasks:
+#  build:
+#    outputs:
+#      - 'lib'

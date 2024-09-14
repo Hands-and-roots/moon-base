@@ -1,4 +1,4 @@
-import type { StorybookConfig } from '@storybook/react-vite';
+import type { StorybookConfig } from '@storybook/nextjs';
 
 import { join, dirname } from 'path';
 
@@ -17,10 +17,15 @@ const config: StorybookConfig = {
 		getAbsolutePath('@storybook/addon-essentials'),
 		getAbsolutePath('@chromatic-com/storybook'),
 		getAbsolutePath('@storybook/addon-interactions'),
+		getAbsolutePath('@storybook/addon-coverage'),
 	],
 	framework: {
-		name: getAbsolutePath('@storybook/react-vite'),
+		name: getAbsolutePath('@storybook/nextjs'),
 		options: {},
+	},
+	staticDirs: ['../public'],
+	features: {
+		// interactionsDebugger: true, // Enable playback controls
 	},
 };
 export default config;

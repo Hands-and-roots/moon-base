@@ -10,6 +10,6 @@
   ],
   "compilerOptions": {
     "jsx": "react",
-    "outDir": "../../.moon/cache/types/packages/shared"
+    "outDir": "../../.moon/cache/types/packages/shared-components"
   }
 }

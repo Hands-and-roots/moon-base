@@ -1,6 +1,21 @@
 type: 'library'
 
-# tasks:
-#   build:
-#     outputs:
-#       - 'lib'
+fileGroups:
+  storybook:
+    - 'components/**/*'
+    - 'stories/**/*'
+    - 'tests/**/*'
+    - '.storybook/**/*'
+tasks:
+  buildStorybook:
+    command: 'storybook build --output-dir @out(0)'
+    inputs:
+      - '@group(storybook)'
+    outputs:
+      - 'build'
+
+  storybook:
+    local: true
+    command: 'storybook dev -p 6006'
+    inputs:
+      - '@group(storybook)'

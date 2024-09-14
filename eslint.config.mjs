@@ -1,8 +1,8 @@
 import tsParser from "@typescript-eslint/parser";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
+import {fileURLToPath} from "node:url";
 import js from "@eslint/js";
-import { FlatCompat } from "@eslint/eslintrc";
+import {FlatCompat} from "@eslint/eslintrc";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -29,7 +29,7 @@ export default [{
         "**/package-lock.json",
         "**/yarn.lock",
     ],
-}, ...compat.extends("moon", "moon/node", "moon/react"), {
+}, ...compat.extends("moon", "moon/node", "moon/react", 'node'), {
     languageOptions: {
         parser: tsParser,
         ecmaVersion: 5,
@@ -51,6 +51,9 @@ export default [{
 
     rules: {
         "import/no-default-export": "off",
+        "unicorn/prefer-module": "off",
+        "unicorn/import-index":
+            [{"ignoreImports": true}]
     },
 }, {
     files: ["**/*.config.js", "**/.eslintrc.js"],
@@ -59,5 +62,7 @@ export default [{
         "sort-keys": "off",
         "import/no-commonjs": "off",
         "unicorn/prefer-module": "off",
+        "unicorn/import-index":
+            [{"ignoreImports": true}]
     },
 }];
