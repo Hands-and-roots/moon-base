@@ -3,9 +3,6 @@
   "files": [],
   "references": [
     {
-      "path": "apps/nextjs-app"
-    },
-    {
       "path": "packages/utils"
     }
   ]
